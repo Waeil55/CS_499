@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases Narrative - Waeil Mikhaeil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #bb86fc !important;
+        }
+        .hero {
+            background: linear-gradient(135deg, #006dea 0%, #308ff5 100%);
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #006dea;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #333333;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body {
+            color: #ffffff;
+        }
+        .card-body p, .card-body li {
+            color: #ffffff;
+        }
+        .card-body a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        .card-body a:hover {
+            color: #ffffff;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Waeil Mikhaeil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#self-assessment">Self-Assessment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#code-review">Code Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#artifacts">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#screenshots">Screenshots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#repository">Repository</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Databases Narrative</h1>
+        </div>
+    </div>
+
+    <!-- Initial Artifact -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Initial Artifact</h2>
+                    <p>My initial artifact was a simple SQLite database in my Android Event Management App. It stored events with columns for ID, title, description, date, and location. The database had basic functions to add, view, and delete events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhancements Made -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Enhancements Made</h2>
+                    <p>I improved the database in these ways:</p>
+                    <ul>
+                        <li><strong>Indexing:</strong> Added an index on the <code>date_time</code> column to make searches faster.</li>
+                        <li><strong>JOINs:</strong> Created a <code>categories</code> table and used JOINs to connect events with categories, letting users filter events by category in the Search Events page.</li>
+                        <li><strong>Transactions:</strong> Used transactions to ensure safe deletes, so deleting an event also removes its category links without errors.</li>
+                        <li><strong>Parameterized Queries:</strong> Updated all database queries to use parameters, making the app safer from attacks like SQL injection.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Demonstrated -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Skills Demonstrated</h2>
+                    <p>These changes show my skills in:</p>
+                    <ul>
+                        <li>Writing secure and efficient database code.</li>
+                        <li>Using advanced SQL features like JOINs and transactions.</li>
+                        <li>Testing to ensure the database works well with the app.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Outcome Alignment -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Course Outcome Alignment</h2>
+                    <p>This work meets <strong>outcome #3 (Databases)</strong> by showing I can design and manage a database that is secure, fast, and reliable. My app now handles event data safely and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Files -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Files</h2>
+                    <ul>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/eventmanagementapp/EventsDatabase.java">EventsDatabase.java</a>: The enhanced database code.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Waeil Mikhaeil. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
