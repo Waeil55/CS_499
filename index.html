@@ -11,24 +11,24 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #2f2f2f;
-            color: #f5f5f5;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333333; /* Dark text for general content */
             line-height: 1.8;
             scroll-behavior: smooth;
         }
         .navbar {
-            background-color: #2c2c2c;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: #ffffff; /* White navbar for contrast */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .navbar-brand, .nav-link {
-            color: #f5f5f5 !important;
+            color: #333333 !important; /* Dark text for navbar */
             transition: color 0.3s ease;
         }
         .nav-link:hover {
-            color: #bb86fc !important;
+            color: #bb86fc !important; /* Purple hover effect */
         }
         .hero {
-            background: linear-gradient(135deg, #006dea 0%, #308ff5 100%);
+            background: linear-gradient(135deg, #006dea 0%, #308ff5 100%); /* Blue gradient */
             padding: 80px 0;
             text-align: center;
             border-radius: 0 0 50px 50px;
@@ -36,7 +36,7 @@
         .hero h1 {
             font-size: 3rem;
             font-weight: 600;
-            color: #fff;
+            color: #ffffff;
         }
         .hero p {
             font-size: 1.2rem;
@@ -48,31 +48,40 @@
         .section h2 {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #bb86fc;
+            color: #006dea; /* Blue for section headings */
             margin-bottom: 30px;
             text-align: center;
         }
+        .section h3 {
+            color: #006dea; /* Blue for subsection headings */
+        }
         .card {
-            background-color: #2c2c2c;
+            background-color: #333333; /* Darker card background for contrast */
             border: none;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             margin-bottom: 20px;
         }
         .card:hover {
             transform: translateY(-5px);
         }
+        .card-body {
+            color: #ffffff; /* White text for card content */
+        }
         .card-body p {
-            color: #d0d0d0;
+            color: #ffffff; /* White text for paragraphs in cards */
+        }
+        .card-body li {
+            color: #ffffff; /* White text for list items in cards */
         }
         .card-title a {
-            color: #bb86fc;
+            color: #bb86fc; /* Purple links in cards */
             text-decoration: none;
             font-weight: 600;
         }
         .card-title a:hover {
-            color: #fff;
+            color: #ffffff; /* White on hover */
         }
         .screenshot-container {
             display: flex;
@@ -85,7 +94,7 @@
         }
         .screenshot-card img {
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
         .screenshot-card img:hover {
@@ -94,25 +103,26 @@
         .screenshot-card p {
             margin-top: 10px;
             font-size: 0.9rem;
-            color: #d0d0d0;
+            color: #333333; /* Dark text for screenshot captions */
         }
         .btn-custom {
-            background-color: #bb86fc;
-            color: #fff;
+            background-color: #006dea; /* Blue button */
+            color: #ffffff;
             border: none;
             padding: 10px 20px;
             border-radius: 25px;
             transition: background-color 0.3s ease;
         }
         .btn-custom:hover {
-            background-color: #9f4fff;
+            background-color: #005bb5; /* Darker blue on hover */
         }
         footer {
-            background-color: #2c2c2c;
+            background-color: #ffffff; /* White footer */
             padding: 20px 0;
             text-align: center;
-            color: #d0d0d0;
+            color: #333333; /* Dark text for footer */
             font-size: 0.9rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -150,7 +160,7 @@
             <h2>Professional Self-Assessment</h2>
             <div class="card">
                 <div class="card-body">
-                    <p>I am Waeil Mikhaeil, Bachlor's Degree in Computer Science/ Software Engineering Concentration. I built an Android Event Management App for CS 499, showcasing my expertise in:</p>
+                    <p>I am Waeil Mikhaeil, Bachelor’s Degree in Computer Science/Software Engineering Concentration. I built an Android Event Management App for CS 499, showcasing my expertise in:</p>
                     <ul>
                         <li><strong>Software Design and Engineering:</strong> Developed a user-friendly app with a bottom menu (Add Events, View Events, Search Events, Settings, Help pages), dark mode, and change password functionality (outcome #4).</li>
                         <li><strong>Algorithms and Data Structures:</strong> Implemented quicksort and search methods to sort and filter events, enhancing performance (outcome #2).</li>
@@ -292,7 +302,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Waeil Mikhaeil. All rights reserved.</p>
+        <p>© 2025 Waeil Mikhaeil. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS -->
