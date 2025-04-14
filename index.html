@@ -1,80 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CS 499 ePortfolio - Waeil Mikhaeil</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1, h2, h3, h4 { color: #2a2a2a; }
-    ul { line-height: 1.6; }
-    img { margin: 10px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 499 ePortfolio - Waeil Mikhaeil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #2c2c2c;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-brand, .nav-link {
+            color: #f5f5f5 !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #bb86fc !important;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6200ea 0%, #bb86fc 100%);
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #bb86fc;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card {
+            background-color: #2c2c2c;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body p {
+            color: #d0d0d0;
+        }
+        .card-title a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card-title a:hover {
+            color: #fff;
+        }
+        .screenshot-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .screenshot-card {
+            text-align: center;
+        }
+        .screenshot-card img {
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .screenshot-card img:hover {
+            transform: scale(1.05);
+        }
+        .screenshot-card p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #d0d0d0;
+        }
+        .btn-custom {
+            background-color: #bb86fc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #9f4fff;
+        }
+        footer {
+            background-color: #2c2c2c;
+            padding: 20px 0;
+            text-align: center;
+            color: #d0d0d0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>CS 499 ePortfolio - Waeil Mikhaeil</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Waeil Mikhaeil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#self-assessment">Self-Assessment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code-review">Code Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#artifacts">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#screenshots">Screenshots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#repository">Repository</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <h2>Professional Self-Assessment</h2>
-  <p>I am Waeil Mikhaeil, a Computer Science student. I built an Android Event Management App for CS 499, showing my skills:</p>
-  <ul>
-    <li><strong>Software Design and Engineering:</strong> I created an app with a bottom menu (Add Events, View Events, Search Events, Settings, Help pages), dark mode, and change password (outcome #4).</li>
-    <li><strong>Algorithms and Data Structures:</strong> I used quicksort and search methods to sort and filter events (outcome #2).</li>
-    <li><strong>Databases:</strong> I added indexing, JOINs, transactions, and parameterized queries to my database (outcome #3).</li>
-  </ul>
-  <p>This project meets all five Computer Science program outcomes:</p>
-  <ol>
-    <li>Solving problems (managing events).</li>
-    <li>Using algorithms (quicksort, search).</li>
-    <li>Managing databases (secure SQL).</li>
-    <li>Designing software (user-friendly app).</li>
-    <li>Working ethically (secure features).</li>
-  </ol>
-  <p>I am ready for a career in software development.</p>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>CS 499 ePortfolio</h1>
+            <p>A Showcase of My Android Event Management App and Technical Skills</p>
+        </div>
+    </div>
 
-  <h2>Code Review</h2>
-  <p>Watch my code review video:</p>
-  <iframe src="https://youtu.be/ZJX9N3uloco" width="560" height="315"></iframe>
+    <!-- Professional Self-Assessment -->
+    <div class="section" id="self-assessment">
+        <div class="container">
+            <h2>Professional Self-Assessment</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>I am Waeil Mikhaeil, a Computer Science student. I built an Android Event Management App for CS 499, showcasing my expertise in:</p>
+                    <ul>
+                        <li><strong>Software Design and Engineering:</strong> Developed a user-friendly app with a bottom menu (Add Events, View Events, Search Events, Settings, Help pages), dark mode, and change password functionality (outcome #4).</li>
+                        <li><strong>Algorithms and Data Structures:</strong> Implemented quicksort and search methods to sort and filter events, enhancing performance (outcome #2).</li>
+                        <li><strong>Databases:</strong> Improved the database with indexing, JOINs, transactions, and parameterized queries for security and efficiency (outcome #3).</li>
+                    </ul>
+                    <p>This project aligns with all five Computer Science program outcomes:</p>
+                    <ol>
+                        <li>Solving problems (managing events).</li>
+                        <li>Using algorithms (quicksort, search).</li>
+                        <li>Managing databases (secure SQL).</li>
+                        <li>Designing software (user-friendly app).</li>
+                        <li>Working ethically (secure features).</li>
+                    </ol>
+                    <p>I am prepared for a career in software development, ready to build impactful applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <h2>Artifacts and Narratives</h2>
-  <h3><a href="software_design_narrative.md">Software Design and Engineering</a></h3>
-  <p>I added a bottom menu, dark mode, change password, and Forgot Password to my app, making it user-friendly.</p>
+    <!-- Code Review -->
+    <div class="section" id="code-review">
+        <div class="container">
+            <h2>Code Review</h2>
+            <div class="card">
+                <div class="card-body text-center">
+                    <p>Watch my code review video to explore the development process:</p>
+                    <iframe src="https://youtu.be/ZJX9N3uloco" width="100%" height="400" class="rounded"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <h3><a href="algorithms_narrative.md">Algorithms and Data Structures</a></h3>
-  <p>I used quicksort and search methods to sort and filter events, improving performance.</p>
+    <!-- Artifacts and Narratives -->
+    <div class="section" id="artifacts">
+        <div class="container">
+            <h2>Artifacts and Narratives</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="software_design_narrative.md">Software Design and Engineering</a></h5>
+                            <p>Enhanced the app with a bottom menu, dark mode, change password, and Forgot Password features, ensuring a seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="algorithms_narrative.md">Algorithms and Data Structures</a></h5>
+                            <p>Implemented quicksort and search methods to sort and filter events, optimizing performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="databases_narrative.md">Databases</a></h5>
+                            <p>Upgraded the database with indexing, JOINs, transactions, and parameterized queries for security and speed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <h3><a href="databases_narrative.md">Databases</a></h3>
-  <p>I improved my database with indexing, JOINs, transactions, and parameterized queries for security and speed.</p>
+    <!-- Screenshots -->
+    <div class="section" id="screenshots">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <h3 class="text-center mt-4">Light Mode</h3>
+            <div class="screenshot-container">
+                <div class="screenshot-card">
+                    <img src="images/login_screen.png" alt="Login Screen Light Mode" width="200">
+                    <p>Login Screen (Light Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/add_event_calendar.png" alt="Add Event Calendar Light Mode" width="200">
+                    <p>Add Event Calendar (Light Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/view_events_light.png" alt="View Events Light Mode" width="200">
+                    <p>View Events (Light Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/search_events_light.png" alt="Search Events Light Mode" width="200">
+                    <p>Search Events (Light Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/settings_light.png" alt="Settings Light Mode" width="200">
+                    <p>Settings (Light Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/help_light.png" alt="Help Page Light Mode" width="200">
+                    <p>Help Page (Light Mode)</p>
+                </div>
+            </div>
+            <h3 class="text-center mt-5">Dark Mode</h3>
+            <div class="screenshot-container">
+                <div class="screenshot-card">
+                    <img src="images/login_screen_dark.png" alt="Login Screen Dark Mode" width="200">
+                    <p>Login Screen (Dark Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/forgot_password_dark.png" alt="Forgot Password Dark Mode" width="200">
+                    <p>Forgot Password (Dark Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/add_event_calendar_dark.png" alt="Add Event Calendar Dark Mode" width="200">
+                    <p>Add Event Calendar (Dark Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/view_events_dark.png" alt="View Events Dark Mode" width="200">
+                    <p>View Events (Dark Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/search_events_dark.png" alt="Search Events Dark Mode" width="200">
+                    <p>Search Events (Dark Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/settings_dark.png" alt="Settings Dark Mode" width="200">
+                    <p>Settings (Dark Mode)</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="images/help_dark.png" alt="Help Page Dark Mode" width="200">
+                    <p>Help Page (Dark Mode)</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <h2>Screenshots</h2>
-  <h3>Light Mode</h3>
-  <p>Login Screen (Light Mode):</p>
-  <img src="images/login_screen.png" alt="Login Screen Light Mode" width="200">
-  <p>Add Event Calendar (Light Mode):</p>
-  <img src="images/add_event_calendar.png" alt="Add Event Calendar Light Mode" width="200">
-  <p>View Events (Light Mode):</p>
-  <img src="images/view_events_light.png" alt="View Events Light Mode" width="200">
-  <p>Search Events (Light Mode):</p>
-  <img src="images/search_events_light.png" alt="Search Events Light Mode" width="200">
-  <p>Settings (Light Mode):</p>
-  <img src="images/settings_light.png" alt="Settings Light Mode" width="200">
-  <p>Help Page (Light Mode):</p>
-  <img src="images/help_light.png" alt="Help Page Light Mode" width="200">
+    <!-- Project Repository -->
+    <div class="section" id="repository">
+        <div class="container text-center">
+            <h2>Project Repository</h2>
+            <p>Explore the full source code and documentation on GitHub:</p>
+            <a href="https://github.com/Waeil55/CS_499" class="btn btn-custom">View on GitHub</a>
+        </div>
+    </div>
 
-  <h3>Dark Mode</h3>
-  <p>Login Screen (Dark Mode):</p>
-  <img src="images/login_screen_dark.png" alt="Login Screen Dark Mode" width="200">
-  <p>Forgot Password (Dark Mode):</p>
-  <img src="images/forgot_password_dark.png" alt="Forgot Password Dark Mode" width="200">
-  <p>Add Event Calendar (Dark Mode):</p>
-  <img src="images/add_event_calendar_dark.png" alt="Add Event Calendar Dark Mode" width="200">
-  <p>View Events (Dark Mode):</p>
-  <img src="images/view_events_dark.png" alt="View Events Dark Mode" width="200">
-  <p>Search Events (Dark Mode):</p>
-  <img src="images/search_events_dark.png" alt="Search Events Dark Mode" width="200">
-  <p>Settings (Dark Mode):</p>
-  <img src="images/settings_dark.png" alt="Settings Dark Mode" width="200">
-  <p>Help Page (Dark Mode):</p>
-  <img src="images/help_dark.png" alt="Help Page Dark Mode" width="200">
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Waeil Mikhaeil. All rights reserved.</p>
+    </footer>
 
-  <h2>Project Repository</h2>
-  <p><a href="https://github.com/Waeil55/CS_499">View all files on GitHub</a></p>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
