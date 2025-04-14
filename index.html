@@ -12,7 +12,7 @@
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #000000; /* Black background */
-            color: #ffffff; /* Unchanged: Dark text for general content */
+            color: #ffffff; /* Default text color set to white for consistency */
             line-height: 1.8;
             scroll-behavior: smooth;
         }
@@ -21,7 +21,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .navbar-brand, .nav-link {
-            color: #ffffff !important; /* Unchanged: Dark text for navbar */
+            color: #ffffff !important; /* White text for navbar brand and links */
             transition: color 0.3s ease;
         }
         .nav-link:hover {
@@ -106,7 +106,10 @@
         .screenshot-card p {
             margin-top: 10px;
             font-size: 0.9rem;
-            color: #fbfbfb; /* Unchanged: Dark text for screenshot captions */
+            color: #fbfbfb; /* Unchanged: Light text for screenshot captions */
+        }
+        .repository-text {
+            color: #ffffff; /* White text for "Explore the full source code..." */
         }
         .btn-custom {
             background-color: #006dea; /* Unchanged: Blue button */
@@ -123,7 +126,7 @@
             background-color: #1a1a1a; /* Dark gray footer for contrast */
             padding: 20px 0;
             text-align: center;
-            color: #ffffff; /* Unchanged: Dark text for footer */
+            color: #ffffff; /* White text for footer */
             font-size: 0.9rem;
             box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
         }
@@ -298,7 +301,7 @@
     <div class="section" id="repository">
         <div class="container text-center">
             <h2>Project Repository</h2>
-            <p>Explore the full source code and documentation on GitHub:</p>
+            <p class="repository-text">Explore the full source code and documentation on GitHub:</p>
             <a href="https://github.com/Waeil55/CS_499" class="btn btn-custom">View on GitHub</a>
         </div>
     </div>
