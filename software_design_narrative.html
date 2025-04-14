@@ -11,24 +11,24 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #000000; /* Black background */
-            color: #ffffff; /* White text */
+            background-color: #000000;
+            color: #ffffff;
             line-height: 1.8;
             scroll-behavior: smooth;
         }
         .navbar {
-            background-color: #1a1a1a; /* Dark gray navbar */
+            background-color: #1a1a1a;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .navbar-brand, .nav-link {
-            color: #ffffff !important; /* White text for navbar */
+            color: #ffffff !important;
             transition: color 0.3s ease;
         }
         .nav-link:hover {
-            color: #bb86fc !important; /* Purple hover effect */
+            color: #bb86fc !important;
         }
         .hero {
-            background: linear-gradient(135deg, #006dea 0%, #308ff5 100%); /* Blue gradient */
+            background: linear-gradient(135deg, #006dea 0%, #308ff5 100%);
             padding: 60px 0;
             text-align: center;
             border-radius: 0 0 50px 50px;
@@ -39,16 +39,16 @@
             color: #ffffff;
         }
         .section {
-            padding: 60px 0; /* Match index.html section padding */
+            padding: 60px 0;
         }
         .section h2 {
             font-size: 2rem;
             font-weight: 600;
-            color: #006dea; /* Blue headings */
+            color: #006dea;
             margin-bottom: 20px;
         }
         .card {
-            background-color: #333333; /* Darker card background */
+            background-color: #333333;
             border: none;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -59,17 +59,17 @@
             transform: translateY(-5px);
         }
         .card-body {
-            color: #ffffff; /* White text in cards */
+            color: #ffffff;
         }
         .card-body p, .card-body li {
             color: #ffffff;
         }
         .card-body a {
-            color: #bb86fc; /* Purple links */
+            color: #bb86fc;
             text-decoration: none;
         }
         .card-body a:hover {
-            color: #ffffff; /* White on hover */
+            color: #ffffff;
         }
         footer {
             background-color: #1a1a1a;
@@ -172,9 +172,34 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Files</h2>
+                    <h3>Java Files</h3>
                     <ul>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/MainActivity.java">MainActivity.java</a>: Main app code.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/AddEvents.java">AddEvents.java</a>: Handles adding events.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/AllEventsActivity.java">AllEventsActivity.java</a>: Displays all events.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/BaseActivity.java">BaseActivity.java</a>: Base class for activities.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/EditEvents.java">EditEvents.java</a>: Handles editing events.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/ForgotPasswordActivity.java">ForgotPasswordActivity.java</a>: Forgot Password functionality.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/HelpActivity.java">HelpActivity.java</a>: Help page functionality.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/Permissions.java">Permissions.java</a>: Manages app permissions.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/SearchEvents.java">SearchEvents.java</a>: Handles event searching.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/SettingsActivity.java">SettingsActivity.java</a>: Settings page functionality.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/SmsNotificationManager.java">SmsNotificationManager.java</a>: Manages SMS notifications.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/ViewEvents.java">ViewEvents.java</a>: Displays individual events.</li>
+                    </ul>
+                    <h3>XML Layout Files</h3>
+                    <ul>
                         <li><a href="CS_360_Android_App/app/src/main/res/layout/add_events.xml">add_events.xml</a>: Layout with enhanced calendar.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/activity_all_events.xml">activity_all_events.xml</a>: Layout for all events.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/activity_help.xml">activity_help.xml</a>: Help page layout.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/activity_main.xml">activity_main.xml</a>: Main activity layout.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/edit_events.xml">edit_events.xml</a>: Layout for editing events.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/event_item.xml">event_item.xml</a>: Layout for individual event items.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/forgot_password.xml">forgot_password.xml</a>: Forgot Password layout.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/permissions.xml">permissions.xml</a>: Permissions layout.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/search_events.xml">search_events.xml</a>: Search events layout.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/settings.xml">settings.xml</a>: Settings layout.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/view_events.xml">view_events.xml</a>: Layout for viewing events.</li>
                     </ul>
                 </div>
             </div>
