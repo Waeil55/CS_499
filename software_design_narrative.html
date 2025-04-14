@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Design and Engineering Narrative - Waeil Mikhaeil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #1a1a1a; /* Dark gray navbar */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* White text for navbar */
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #bb86fc !important; /* Purple hover effect */
+        }
+        .hero {
+            background: linear-gradient(135deg, #006dea 0%, #308ff5 100%); /* Blue gradient */
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #006dea; /* Blue headings */
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #333333; /* Darker card background */
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body {
+            color: #ffffff; /* White text in cards */
+        }
+        .card-body p, .card-body li {
+            color: #ffffff;
+        }
+        .card-body a {
+            color: #bb86fc; /* Purple links */
+            text-decoration: none;
+        }
+        .card-body a:hover {
+            color: #ffffff; /* White on hover */
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Waeil Mikhaeil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#self-assessment">Self-Assessment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#code-review">Code Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#artifacts">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#screenshots">Screenshots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#repository">Repository</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Software Design and Engineering Narrative</h1>
+        </div>
+    </div>
+
+    <!-- Initial Artifact -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Initial Artifact</h2>
+                    <p>My initial app had basic pages to add and view events, with a simple design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhancements Made -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Enhancements Made</h2>
+                    <p>I improved the app with:</p>
+                    <ul>
+                        <li>A bottom menu (Add Events, View Events, Search Events, Settings, Help pages).</li>
+                        <li>Features like dark mode, change password, and Forgot Password.</li>
+                        <li>Material Design elements, such as elevating the calendar in <code>add_events.xml</code>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Demonstrated -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Skills Demonstrated</h2>
+                    <p>These changes show my skills in:</p>
+                    <ul>
+                        <li>Designing a user-friendly interface.</li>
+                        <li>Writing clean, modular code.</li>
+                        <li>Adding features that improve user experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Outcome Alignment -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Course Outcome Alignment</h2>
+                    <p>This work meets <strong>outcome #4 (Software Design and Engineering)</strong> by showing I can build a complete, user-friendly app.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Files -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Files</h2>
+                    <ul>
+                        <li><a href="CS_360_Android_App/app/src/main/java/com/example/eventmanagementapp/MainActivity.java">MainActivity.java</a>: Main app code.</li>
+                        <li><a href="CS_360_Android_App/app/src/main/res/layout/add_events.xml">add_events.xml</a>: Layout with enhanced calendar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Waeil Mikhaeil. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
