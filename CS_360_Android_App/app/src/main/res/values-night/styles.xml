@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for CalendarView in dark mode -->
+    <style name="CustomCalendarView">
+        <item name="android:calendarViewShown">true</item>
+        <item name="android:dateTextAppearance">@style/CustomCalendarDateTextAppearance</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:weekDayTextAppearance">@style/CustomCalendarWeekDayText</item>
+        <item name="android:focusedMonthDateColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Style for the date text (day numbers) in dark mode -->
+    <style name="CustomCalendarDateTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    </resources>

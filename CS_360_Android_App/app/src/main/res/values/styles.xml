@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for CalendarView in light mode -->
+    <style name="CustomCalendarView">
+        <item name="android:calendarViewShown">true</item>
+        <item name="android:dateTextAppearance">@style/CustomCalendarDateTextAppearance</item>
+        <item name="android:weekDayTextAppearance">@style/CustomCalendarWeekDayText</item>
+        <item name="android:focusedMonthDateColor">?attr/colorPrimary</item>
+        <item name="android:unfocusedMonthDateColor">?android:attr/textColorSecondary</item>
+        <item name="android:selectedDateVerticalBar">@android:color/transparent</item>
+        <item name="android:weekNumberColor">?android:attr/textColorSecondary</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- Style for the date text (day numbers) in light mode -->
+    <style name="CustomCalendarDateTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="CustomCalendarWeekDayText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+</resources>

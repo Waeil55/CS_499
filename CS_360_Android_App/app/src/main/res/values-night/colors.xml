@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="purple_200">#9541FB</color>
+    <color name="purple_500">#7619FB</color>
+    <color name="purple_700">#692FEB</color>
+    <color name="teal_200">#FF80CBC4</color>
+    <color name="teal_700">#FF26A69A</color>
+
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Material design colors -->
+    <color name="material_dynamic_primary50">#FFBB86FC</color>
+    <color name="material_dynamic_neutral50">#FFFFFF</color>
+    <color name="design_default_color_error">#FFEF5350</color>
+    <color name="design_default_color_secondary">#FF26A69A</color>
+</resources>
