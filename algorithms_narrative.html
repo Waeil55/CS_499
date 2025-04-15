@@ -109,6 +109,40 @@
     </div>
 
 
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Enhancements Made</h2>
+                    <p>I added:</p>
+                    <ul>
+                        <li>My artifact is an Android Event Management App, originally created about a year ago for a CS 360 class. The app allows users to add, view, search, and manage events. Initially, it had a basic list of events without sorting or filtering capabilities.<br>
+
+                            Justification for Inclusion I selected this app to demonstrate my skills in algorithms and data structures because it provided an opportunity to optimize data handling in a real-world project. The initial app lacked efficient event management, so I enhanced it by adding:<br>
+                            
+                            A quicksort algorithm to sort events by date in the View Events and AllEventsActivity pages. I chose quicksort over other algorithms like mergesort due to its average-case time complexity of O(n log n) and in-place sorting, though I had to carefully handle pivot selection to avoid worst-case scenarios.<br>
+
+                            A search method to filter events by title in the Search Events page, improving user efficiency.<br>
+
+                            Edit and delete icons next to each event in AllEventsActivity, SearchEvents, and ViewEvents, using a callback in EventsAdapter to handle these actions, which made the code more modular and organized.<br>
+
+                            Optimizations to make sorting and searching faster, including unit tests to verify correctness and reloading lists in onResume to keep active and archived lists in sync with the database. These enhancements demonstrate my ability to apply algorithmic principles (quicksort, search) and manage data structures (ArrayList for events), aligning with course outcome #3 (Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Reflection on the Enhancement Process -->
+<div class="section">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Reflection on the Enhancement Process I learned how to implement and optimize quicksort, which deepened my understanding of algorithmic efficiency and time complexity trade-offs. A challenge was handling edge cases, such as duplicate dates in the event list, which I resolved through iterative testing and adjusting the pivot selection in quicksort. Keeping the UI updated after deleting an event was also tricky—I had to use notifyDataSetChanged() to refresh the list correctly, and syncing active/archived lists in AllEventsActivity required reloading data in onResume. Feedback from my instructor helped me focus on performance optimization, leading to a 20% faster event loading time. This process taught me how to make my code more modular and handle data efficiently, skills that are crucial for developing scalable applications. Although I planned to add a binary search feature for date-based searching, I prioritized optimizing quicksort and UI interactions for this submission, which still effectively demonstrates my algorithmic skills.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- Enhancements Made -->
@@ -128,17 +162,7 @@
     </div>
 </div>
 
-<!-- Reflection on the Enhancement Process -->
-<div class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Reflection on the Enhancement Process</h2>
-                <p>I learned how to implement and optimize quicksort, which deepened my understanding of algorithmic efficiency. A challenge was handling edge cases, such as duplicate dates, which I resolved through iterative testing. Feedback from my instructor helped me focus on performance optimization, leading to a 20% faster event loading time. This work aligns with outcome #2 (Algorithms and Data Structures) by showcasing my ability to use algorithms effectively.</p>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 
@@ -199,6 +223,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <!-- Files -->
     <div class="section">

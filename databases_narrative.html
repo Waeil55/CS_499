@@ -114,11 +114,36 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Initial Artifact</h2>
-                    <p>My initial artifact was a simple SQLite database in my Android Event Management App. It stored events with columns for ID, title, description, date, and location. The database had basic functions to add, view, and delete events.</p>
+                    <p>My artifact is an Android Event Management App, developed for CS 360 using SQLite as the database backend. I created it in 2024, and it initially supported basic event management functions like adding and viewing events with a simple database structure.<br>
+
+                        Justification for Inclusion I chose this app to showcase my database management skills because it allowed me to implement advanced database techniques in a practical application. The initial database had basic functionality with simple queries. I enhanced it by adding:<br>
+
+                        Indexing on the date_time column in the events table to speed up searches.<br>
+
+                        JOINs by creating a categories table, allowing users to filter events by category in the Search Events page.<br>
+
+                        Transactions to ensure safe deletes, so deleting an event also removes its category links without errors.<br>
+
+                        Parameterized queries in insertEvent() and updateEvent() to prevent SQL injection, enhancing security.<br>
+
+                        Data validation to ensure all inputs are sanitized, protecting against malformed data.<br>
+
+                        A scalable database schema to support future additions, such as new event attributes, by using flexible table structures. These enhancements demonstrate my proficiency in database optimization, security, and scalability, aligning with course outcome #3 (Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals) and outcome #5 (Develop a security mindset that anticipates adversarial exploits in software architecture).</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Reflection on the Enhancement Process -->
+<div class="section">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Reflection on the Enhancement Process I gained a deeper understanding of database optimization techniques, such as indexing and transactions, which improved query performance by 30%. A challenge was debugging JOIN operations due to initial data mismatches, which I resolved by testing with sample data and adjusting the schema. Implementing parameterized queries required restructuring existing queries, but peer feedback encouraged this focus on security, ensuring protection against SQL injection. I also learned the importance of data validation and designing for scalability, such as supporting future event attributes, which prepares the app for long-term use. This process enhanced my ability to manage secure and efficient databases, a critical skill for my career in software development. Although I planned to implement auto-archiving for events older than 6 months, I focused on JOINs and transactions for this submission, which still effectively showcases my database skills.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Enhancements Made -->
 <div class="section">
@@ -139,17 +164,7 @@
     </div>
 </div>
 
-<!-- Reflection on the Enhancement Process -->
-<div class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Reflection on the Enhancement Process</h2>
-                <p>I gained a deeper understanding of database optimization techniques, such as indexing and transactions, which improved query performance by 30%. A challenge was debugging JOIN operations due to initial data mismatches, which I resolved through testing. Peer feedback encouraged me to focus on security, leading to the use of parameterized queries. This work aligns with outcome #3 (Databases) by demonstrating my ability to manage secure and efficient databases.</p>
-            </div>
-        </div>
-    </div>
-</div>
+
 
     <!-- Enhancements Made -->
     <div class="section">
