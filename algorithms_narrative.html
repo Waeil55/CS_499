@@ -108,105 +108,33 @@
         </div>
     </div>
 
-
-    <div class="section">
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <h2>Enhancements Made</h2>
-                    <p>I added:</p>
-                    <ul>
-                        <li>My artifact is an Android Event Management App, originally created about a year ago for a CS 360 class. The app allows users to add, view, search, and manage events. Initially, it had a basic list of events without sorting or filtering capabilities.<br>
-
-                            Justification for Inclusion I selected this app to demonstrate my skills in algorithms and data structures because it provided an opportunity to optimize data handling in a real-world project. The initial app lacked efficient event management, so I enhanced it by adding:<br>
-                            
-                            A quicksort algorithm to sort events by date in the View Events and AllEventsActivity pages. I chose quicksort over other algorithms like mergesort due to its average-case time complexity of O(n log n) and in-place sorting, though I had to carefully handle pivot selection to avoid worst-case scenarios.<br>
-
-                            A search method to filter events by title in the Search Events page, improving user efficiency.<br>
-
-                            Edit and delete icons next to each event in AllEventsActivity, SearchEvents, and ViewEvents, using a callback in EventsAdapter to handle these actions, which made the code more modular and organized.<br>
-
-                            Optimizations to make sorting and searching faster, including unit tests to verify correctness and reloading lists in onResume to keep active and archived lists in sync with the database. These enhancements demonstrate my ability to apply algorithmic principles (quicksort, search) and manage data structures (ArrayList for events), aligning with course outcome #3 (Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices).</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Reflection on the Enhancement Process -->
-<div class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Reflection on the Enhancement Process I learned how to implement and optimize quicksort, which deepened my understanding of algorithmic efficiency and time complexity trade-offs. A challenge was handling edge cases, such as duplicate dates in the event list, which I resolved through iterative testing and adjusting the pivot selection in quicksort. Keeping the UI updated after deleting an event was also tricky—I had to use notifyDataSetChanged() to refresh the list correctly, and syncing active/archived lists in AllEventsActivity required reloading data in onResume. Feedback from my instructor helped me focus on performance optimization, leading to a 20% faster event loading time. This process taught me how to make my code more modular and handle data efficiently, skills that are crucial for developing scalable applications. Although I planned to add a binary search feature for date-based searching, I prioritized optimizing quicksort and UI interactions for this submission, which still effectively demonstrates my algorithmic skills.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-    <!-- Enhancements Made -->
-<div class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Enhancements Made</h2>
-                <p>I added:</p>
-                <ul>
-                    <li>A quicksort algorithm to sort events by date in the View Events page. I chose quicksort over other algorithms like mergesort due to its average-case time complexity of O(n log n) and in-place sorting, though it required careful handling of pivot selection to avoid worst-case scenarios.</li>
-                    <li>A search method to filter events by title in the Search Events page.</li>
-                    <li>Optimization to make sorting and searching faster, including unit tests to verify correctness.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
     <!-- Initial Artifact -->
     <div class="section">
         <div class="container">
             <div class="card">
                 <div class="card-body">
                     <h2>Initial Artifact</h2>
-                    <p>My initial app had a basic list to show events without sorting or filtering.</p>
+                    <p>My artifact is an Android Event Management App, originally created about a year ago for a CS 360 class. The app allows users to add, view, search, and manage events. Initially, it had a basic list of events without sorting or filtering capabilities.</p>
+                    <p><strong>Justification for Inclusion:</strong> I selected this app to demonstrate my skills in algorithms and data structures because it provided an opportunity to optimize data handling in a real-world project. The initial app lacked efficient event management, so I enhanced it by adding:</p>
+                    <ul>
+                        <li>A quicksort algorithm to sort events by date in the View Events and AllEventsActivity pages. I chose quicksort over other algorithms like mergesort due to its average-case time complexity of O(n log n) and in-place sorting, though I had to carefully handle pivot selection to avoid worst-case scenarios.</li>
+                        <li>A search method to filter events by title in the Search Events page, improving user efficiency.</li>
+                        <li>Edit and delete icons next to each event in AllEventsActivity, SearchEvents, and ViewEvents, using a callback in EventsAdapter to handle these actions, which made the code more modular and organized.</li>
+                        <li>Optimizations to make sorting and searching faster, including unit tests to verify correctness and reloading lists in onResume to keep active and archived lists in sync with the database.</li>
+                    </ul>
+                    <p>These enhancements demonstrate my ability to apply algorithmic principles (quicksort, search) and manage data structures (ArrayList for events), aligning with course outcome #3 (Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices).</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Enhancements Made -->
+    <!-- Reflection on the Enhancement Process -->
     <div class="section">
         <div class="container">
             <div class="card">
                 <div class="card-body">
-                    <h2>Enhancements Made</h2>
-                    <p>I added:</p>
-                    <ul>
-                        <li>A quicksort algorithm to sort events by date in the View Events page.</li>
-                        <li>A search method to filter events by title in the Search Events page.</li>
-                        <li>Optimization to make sorting and searching faster.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills Demonstrated -->
-    <div class="section">
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <h2>Skills Demonstrated</h2>
-                    <p>These changes show my skills in:</p>
-                    <ul>
-                        <li>Using algorithms like quicksort to sort data.</li>
-                        <li>Handling data structures like lists efficiently.</li>
-                        <li>Improving app performance.</li>
-                    </ul>
+                    <h2>Reflection on the Enhancement Process</h2>
+                    <p>I learned how to implement and optimize quicksort, which deepened my understanding of algorithmic efficiency and time complexity trade-offs. A challenge was handling edge cases, such as duplicate dates in the event list, which I resolved through iterative testing and adjusting the pivot selection in quicksort. Keeping the UI updated after deleting an event was also tricky—I had to use notifyDataSetChanged() to refresh the list correctly, and syncing active/archived lists in AllEventsActivity required reloading data in onResume. Feedback from my instructor helped me focus on performance optimization, leading to a 20% faster event loading time. This process taught me how to make my code more modular and handle data efficiently, skills that are crucial for developing scalable applications. Although I planned to add a binary search feature for date-based searching, I prioritized optimizing quicksort and UI interactions for this submission, which still effectively demonstrates my algorithmic skills.</p>
                 </div>
             </div>
         </div>
@@ -218,14 +146,11 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Course Outcome Alignment</h2>
-                    <p>This work meets <strong>outcome #2 (Algorithms and Data Structures)</strong> by showing I can use algorithms to manage data effectively.</p>
+                    <p>This work meets <strong>outcome #2 (Algorithms and Data Structures)</strong> by demonstrating my ability to design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices.</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
     <!-- Files -->
     <div class="section">
@@ -233,14 +158,23 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Files</h2>
-                    <h3>Java Files</h3>
+                    <h3>Original Java Files (Before Update)</h3>
+                    <ul>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/EventsAdapter.java">EventsAdapter.java</a>: Original code without sorting or filtering.</li>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/Events.java">Events.java</a>: Original event data structure.</li>
+                    </ul>
+                    <h3>Original XML Layout Files (Before Update)</h3>
+                    <ul>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/res/layout/event_item.xml">event_item.xml</a>: Original layout for event items.</li>
+                    </ul>
+                    <h3>Enhanced Java Files</h3>
                     <ul>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/EventsAdapter.java">EventsAdapter.java</a>: Code with sorting and filtering.</li>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/Events.java">Events.java</a>: Event data structure.</li>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/SearchEvents.java">SearchEvents.java</a>: Handles event searching.</li>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/ViewEvents.java">ViewEvents.java</a>: Displays individual events.</li>
                     </ul>
-                    <h3>XML Layout Files</h3>
+                    <h3>Enhanced XML Layout Files</h3>
                     <ul>
                         <li><a href="CS_360_Android_App/app/src/main/res/layout/event_item.xml">event_item.xml</a>: Layout for individual event items.</li>
                         <li><a href="CS_360_Android_App/app/src/main/res/layout/search_events.xml">search_events.xml</a>: Search events layout.</li>
@@ -258,5 +192,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'930f53a8ddda6748',t:'MTc0NDc2MDgzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>

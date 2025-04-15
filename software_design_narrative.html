@@ -114,69 +114,29 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Initial Artifact</h2>
-                    <p>My artifact is an Android Event Management App I created for a final project in CS 360 in 2024. It lets users manage events with a calendar, login system, and database, allowing them to add, view, and search events.<br>
-
-                        Justification for Inclusion I chose this app for my ePortfolio because it demonstrates my software design and engineering skills in building a complete, user-friendly application. Initially, the app had basic pages to add and view events with a simple UI. I enhanced it by adding:<br>
-                        A bottom menu with Add Events, View Events, Search Events, Settings, and Help pages for easier navigation.<br>
-
-                        Dark mode for better usability in low-light settings.<br>
-
-                        Change password functionality to improve user account management.<br>
-
-                        A Forgot Password feature, including a new screen and database updates, to enhance user accessibility.<br>
-
-                        Material Design elements, such as an elevated calendar in the Add Event screen that auto-fills the date, improving the user experience.<br>
-
-                        Password hashing with BCrypt to enhance security. These enhancements showcase my ability to design intuitive interfaces, implement secure features, and improve usability, aligning with course outcome #4 (Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals). They also meet outcome #5 (Develop a security mindset that anticipates adversarial exploits in software architecture) through the use of BCrypt for secure password storage.</p>
+                    <p>My artifact is an Android Event Management App I created for a final project in CS 360 in 2024. It lets users manage events with a calendar, login system, and database, allowing them to add, view, and search events.</p>
+                    <p><strong>Justification for Inclusion:</strong> I chose this app for my ePortfolio because it demonstrates my software design and engineering skills in building a complete, user-friendly application. Initially, the app had basic pages to add and view events with a simple UI. I enhanced it by adding:</p>
+                    <ul>
+                        <li>A bottom menu with Add Events, View Events, Search Events, Settings, and Help pages for easier navigation.</li>
+                        <li>Dark mode for better usability in low-light settings.</li>
+                        <li>Change password functionality to improve user account management.</li>
+                        <li>A Forgot Password feature, including a new screen and database updates, to enhance user accessibility.</li>
+                        <li>Material Design elements, such as an elevated calendar in the Add Event screen that auto-fills the date, improving the user experience.</li>
+                        <li>Password hashing with BCrypt to enhance security.</li>
+                    </ul>
+                    <p>These enhancements showcase my ability to design intuitive interfaces, implement secure features, and improve usability, aligning with course outcome #4 (Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals). They also meet outcome #5 (Develop a security mindset that anticipates adversarial exploits in software architecture) through the use of BCrypt for secure password storage.</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-        <!-- Reflection on the Enhancement Process -->
-<div class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Reflection on the Enhancement Process</h2>
-                <p>Reflection on the Enhancement Process While enhancing the app’s design, I learned how to implement Material Design principles, such as elevating the calendar for better user interaction, and how to integrate security features like BCrypt password hashing. A key challenge was ensuring the bottom menu worked seamlessly across all pages, which required debugging navigation issues in the activity transitions. Connecting the Forgot Password screen to the login page was also tricky, as I had to update the database schema to support password reset functionality, which I resolved by resetting the database for hashed passwords. I incorporated feedback from peers to improve the dark mode toggle, making it more intuitive by adding a settings switch. These enhancements improved the app’s usability, making it more accessible and visually appealing, and increased its security by protecting user data. I also learned the importance of user-centered design and secure coding practices, which will be valuable in my future career as a mobile app developer.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-    <!-- Enhancements Made -->
+    <!-- Reflection on the Enhancement Process -->
     <div class="section">
         <div class="container">
             <div class="card">
                 <div class="card-body">
-                    <h2>Enhancements Made</h2>
-                    <p>I improved the app with:</p>
-                    <ul>
-                        <li>A bottom menu (Add Events, View Events, Search Events, Settings, Help pages).</li>
-                        <li>Features like dark mode, change password, and Forgot Password.</li>
-                        <li>Material Design elements, such as elevating the calendar in <code>add_events.xml</code>.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills Demonstrated -->
-    <div class="section">
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <h2>Skills Demonstrated</h2>
-                    <p>These changes show my skills in:</p>
-                    <ul>
-                        <li>Designing a user-friendly interface.</li>
-                        <li>Writing clean, modular code.</li>
-                        <li>Adding features that improve user experience.</li>
-                    </ul>
+                    <h2>Reflection on the Enhancement Process</h2>
+                    <p>While enhancing the app’s design, I learned how to implement Material Design principles, such as elevating the calendar for better user interaction, and how to integrate security features like BCrypt password hashing. A key challenge was ensuring the bottom menu worked seamlessly across all pages, which required debugging navigation issues in the activity transitions. Connecting the Forgot Password screen to the login page was also tricky, as I had to update the database schema to support password reset functionality, which I resolved by resetting the database for hashed passwords. I incorporated feedback from peers to improve the dark mode toggle, making it more intuitive by adding a settings switch. These enhancements improved the app’s usability, making it more accessible and visually appealing, and increased its security by protecting user data. I also learned the importance of user-centered design and secure coding practices, which will be valuable in my future career as a mobile app developer.</p>
                 </div>
             </div>
         </div>
@@ -188,7 +148,7 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Course Outcome Alignment</h2>
-                    <p>This work meets <strong>outcome #4 (Software Design and Engineering)</strong> by showing I can build a complete, user-friendly app.</p>
+                    <p>This work meets <strong>outcome #4 (Software Design and Engineering)</strong> by showing I can build a complete, user-friendly app, and <strong>outcome #5 (Security)</strong> by implementing secure password hashing with BCrypt.</p>
                 </div>
             </div>
         </div>
@@ -200,7 +160,19 @@
             <div class="card">
                 <div class="card-body">
                     <h2>Files</h2>
-                    <h3>Java Files</h3>
+                    <h3>Original Java Files (Before Update)</h3>
+                    <ul>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/MainActivity.java">MainActivity.java</a>: Original main app code.</li>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/AddEvents.java">AddEvents.java</a>: Original code for adding events.</li>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/ViewEvents.java">ViewEvents.java</a>: Original code for viewing events.</li>
+                    </ul>
+                    <h3>Original XML Layout Files (Before Update)</h3>
+                    <ul>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/res/layout/add_events.xml">add_events.xml</a>: Original layout for adding events.</li>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/res/layout/activity_main.xml">activity_main.xml</a>: Original main activity layout.</li>
+                        <li><a href="CS_360_Android_App_before_Update/CS_360_Android_App/app/src/main/res/layout/view_events.xml">view_events.xml</a>: Original layout for viewing events.</li>
+                    </ul>
+                    <h3>Enhanced Java Files</h3>
                     <ul>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/MainActivity.java">MainActivity.java</a>: Main app code.</li>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/AddEvents.java">AddEvents.java</a>: Handles adding events.</li>
@@ -215,7 +187,7 @@
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/SmsNotificationManager.java">SmsNotificationManager.java</a>: Manages SMS notifications.</li>
                         <li><a href="CS_360_Android_App/app/src/main/java/com/example/waeilmikhaeil/ViewEvents.java">ViewEvents.java</a>: Displays individual events.</li>
                     </ul>
-                    <h3>XML Layout Files</h3>
+                    <h3>Enhanced XML Layout Files</h3>
                     <ul>
                         <li><a href="CS_360_Android_App/app/src/main/res/layout/add_events.xml">add_events.xml</a>: Layout with enhanced calendar.</li>
                         <li><a href="CS_360_Android_App/app/src/main/res/layout/activity_all_events.xml">activity_all_events.xml</a>: Layout for all events.</li>
@@ -241,5 +213,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'930f53a8dc37dd25',t:'MTc0NDc2MDgzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
