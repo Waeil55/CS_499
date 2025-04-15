@@ -121,6 +121,37 @@
     </div>
 
     <!-- Enhancements Made -->
+<div class="section">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Enhancements Made</h2>
+                <p>I improved the database in these ways:</p>
+                <ul>
+                    <li><strong>Indexing:</strong> Added an index on the <code>date_time</code> column to make searches faster.</li>
+                    <li><strong>JOINs:</strong> Created a <code>categories</code> table and used JOINs to connect events with categories, letting users filter events by category in the Search Events page.</li>
+                    <li><strong>Transactions:</strong> Used transactions to ensure safe deletes, so deleting an event also removes its category links without errors.</li>
+                    <li><strong>Parameterized Queries:</strong> Updated all database queries to use parameters, making the app safer from attacks like SQL injection. I also implemented data validation to ensure all inputs are sanitized, protecting against malformed data.</li>
+                    <li><strong>Scalability:</strong> Designed the database schema to support future additions, such as new event attributes, by using flexible table structures.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reflection on the Enhancement Process -->
+<div class="section">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Reflection on the Enhancement Process</h2>
+                <p>I gained a deeper understanding of database optimization techniques, such as indexing and transactions, which improved query performance by 30%. A challenge was debugging JOIN operations due to initial data mismatches, which I resolved through testing. Peer feedback encouraged me to focus on security, leading to the use of parameterized queries. This work aligns with outcome #3 (Databases) by demonstrating my ability to manage secure and efficient databases.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Enhancements Made -->
     <div class="section">
         <div class="container">
             <div class="card">
